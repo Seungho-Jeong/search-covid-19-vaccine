@@ -2,8 +2,13 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,pycharm,vim,python
 
 
+.idea
+
 # Private information
 account_info.py
+
+# Chrome driver
+chromedriver
 
 ### Linux ###
 *~

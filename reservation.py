@@ -10,15 +10,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 # 변수
-url_home = 'https://www.naver.com/'
+url_home = 'https://myactivity.google.com/page?hl=ko&utm_medium=web&utm_source=youtube&page=youtube_live_chat'
 url_vaccine = 'https://m.place.naver.com/rest/vaccine?vaccineFilter=used&x=127.0258739&y=37.5751279&bounds=126.9874217%3B37.5600927%3B127.064326%3B37.59016'
 driver = webdriver.Chrome('./chromedriver')
 vaccine = False
 
 # 로그인
 driver.get(url_home)
-driver.find_element_by_class_name('link_login').click()
-
 input_id = driver.find_element_by_id('id')
 input_id.send_keys(account_info.NAVER_ID)
 input_pw = driver.find_element_by_id('pw')
